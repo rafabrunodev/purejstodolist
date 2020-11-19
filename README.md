@@ -1,4 +1,4 @@
-# Front-end Test -> PURE JS TODO LIST
+# Front-end | Test -> PURE JS TODO LIST
 
 Sample project using only Javascript ES6, Gulp and SCSS.
 
@@ -19,3 +19,6 @@ In this proejct, Gulp is configured to run the following functions:
 * Uglify the JS files
 * Move final CSS and JS files to the `/dist` folder
  
+## VIEW UI
+
+![alt text](./src/img/screen.png)
