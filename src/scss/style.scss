@@ -1,0 +1,87 @@
+@import "global";
+@import "colors";
+@import "typography";
+@import "fonts";
+@import "mixins";
+@import "header";
+
+
+
+body {
+    background: $dkGray;
+    @include flexCHV;
+    height: 100vh;
+    font-family: "Roboto" sans-serif;
+}
+
+.container {
+    padding: 50px;
+    width: 50%;
+    border: 1px solid $primary;
+    border-radius: 10px;
+    @include flexCHV;
+    flex-direction: column;
+
+    .add-block {
+        @include flexCHV;
+        width: 100%;
+        margin-top: 50px;
+
+        input {
+            padding: 15px;
+            font-size: 16px;
+            width: 80%;
+            border-radius: 10px;
+            border-color: transparent;
+            box-shadow: none;
+        }
+
+        a{
+            color: $primary;
+            font-size: 20px;
+            margin-left: 40px;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer;
+            
+            &:hover {
+                opacity: .7;
+            }
+        }
+    }
+
+    .list-itens {
+        margin-top: 40px;
+        width: 100%;
+
+        p {
+            margin: 15px 0;
+            padding-bottom: 15px;
+            font-size: 18px;
+            color: $primary;
+            border-bottom: 1px solid $darkGreen;
+            @include flexCHV;
+            flex-direction: row;
+            justify-content: space-between;
+
+            &:last-of-type{
+                border: 0px;
+            }
+
+            a{
+                font-weight: bold;
+                text-transform: uppercase;
+                color: $pink;
+                display: none;
+                cursor: pointer;
+            }
+
+            &:hover{
+                a{
+                    display: flex;
+                }
+            }
+        }
+    }
+}
+
